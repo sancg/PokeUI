@@ -1,0 +1,55 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #fafafa;
+  scroll-behavior: smooth;
+}
+
+nav ul {
+  display: flex;
+  background-color: rgb(250, 215, 232);
+  padding: 0.5rem;
+}
+
+li {
+  list-style: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  shape-rendering: optimizespeed;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem;
+  background-color: rgb(255, 255, 255);
+  border: 2px solid #b6b6b6;
+  border-radius: 8px;
+  box-shadow: 6px 6px #080808;
+}
+
+.card__header {
+  padding: 1em;
+  text-align: center;
+}
+
+.card__img {
+  width: 100%;
+  height: 300px;
+  object-fit: contain;
+  padding: 8px;
+}
+
+.card__footer {
+  display: flex;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  justify-content: space-evenly;
+}
