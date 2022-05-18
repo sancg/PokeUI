@@ -7,9 +7,10 @@ const Tarjeta = (props) => {
 
   return (
     <div className="card">
+      <div className="poke-name">{name.toUpperCase()}</div>
       <div className="card__body">
-        <img src={images} alt={name} className="card__img" /> 
-        <div>
+        <img src={images} alt={name} className="card__img" />
+        <div className="poke-type">
           {types.map((item) => {
             return <p key={id + name + Math.random()}>{item.type.name}</p>;
           })}

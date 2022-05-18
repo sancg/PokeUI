@@ -10,7 +10,7 @@ const Pokemon = () => {
     GetDataList()
       .then(setPokes)
       .catch((error) => console.log(error));
-    console.log("Veces que se ejecuta el UseEffect");
+    // console.log("Veces que se ejecuta el UseEffect");
   }, []);
 
   return (
