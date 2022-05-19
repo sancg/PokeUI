@@ -5,9 +5,20 @@ const Tarjeta = (props) => {
     data: { sprite: images, id, name, types },
   } = props;
 
+  const display_id = (data_id) => {
+    let card_id = data_id.toString();
+    card_id = card_id >= 10 && card_id < 100 ? "0" + card_id : card_id;
+
+    card_id = card_id < 10 ? "00" + card_id : card_id;
+    return card_id;
+  };
+
   return (
     <div className="card">
-      <div className="poke-name">{name.toUpperCase()}</div>
+      <div className="poke-name">
+        {name.toUpperCase()}
+        <span>{` #${display_id(id)}`}</span>
+      </div>
       <div className="card__body">
         <img src={images} alt={name} className="card__img" />
         <div className="poke-type">

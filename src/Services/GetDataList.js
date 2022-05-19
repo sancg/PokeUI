@@ -11,7 +11,7 @@ const GetDataList = async () => {
 
   console.log("No Existe localStorage");
   let poke_id = 4;
-  for (poke_id; poke_id < 10; poke_id++) {
+  for (poke_id; poke_id < 15; poke_id++) {
     try {
       const API = await fetch(`https://pokeapi.co/api/v2/pokemon/${poke_id}`);
       const POKE_DATA = await API.json();
